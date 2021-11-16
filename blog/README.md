@@ -18,13 +18,13 @@
 3. **Initialize the database (extract the tags from the text of \*.md and store the content in the database)**
 
    ```
-   python seed.py
+   python3 seed.py
    ```
 
 4. **Start the application**
 
    ```
-   python manage.py runserver
+   python3 manage.py runserver
    ```
 
 Contact information:
