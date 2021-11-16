@@ -1,0 +1,12 @@
+*__pycache__/
+.vscode/
+.vs/
+migrations/
+*.db
+*.sqlite3
+uploads/
+*venv/
+.vscode
+app.pid
+flask
+.DS_Store
