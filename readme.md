@@ -7,6 +7,8 @@ There are two projects in this git:
 2 React client
    https://github.com/maxazure/developer-coding-exercise/tree/master/client
 
+3 Project preview
+  https://mediasuite.u.jayliu.co.nz/
 
 Please click on the link to view the instructions.
 
