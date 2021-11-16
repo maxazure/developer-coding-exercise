@@ -1,3 +1,23 @@
+# Getting Started
+
+There are two projects in this git:
+1. Django server-side API
+   https://github.com/maxazure/developer-coding-exercise/tree/master/blog
+
+2 React client
+   https://github.com/maxazure/developer-coding-exercise/tree/master/client
+
+
+Please click on the link to view the instructions.
+
+Contact information:
+
+maxazure@gmail.com
+
+Jay Liu
+
+
+====================================================
 # Media Suite Coding Exercise
 We’d like you to build a blogging platform!
 
