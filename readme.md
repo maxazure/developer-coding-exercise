@@ -2,25 +2,26 @@
 
 There are two projects in this git:
 
+
 1. Django server-side API
 
-   https://github.com/maxazure/developer-coding-exercise/tree/master/blog
+	https://github.com/maxazure/developer-coding-exercise/tree/master/blog
 
-2 React client
+2. React client
 
-   https://github.com/maxazure/developer-coding-exercise/tree/master/client
+	https://github.com/maxazure/developer-coding-exercise/tree/master/client
 
-3 Project preview
+3. Project preview
 
-  https://mediasuite.u.jayliu.co.nz/
+	https://mediasuite.u.jayliu.co.nz/
 
-Please click on the link to view the instructions.
 
-Contact information:
-
-maxazure@gmail.com
-
-Jay Liu
+	Please click on the link to view the instructions.
+```
+	Contact information:
+	maxazure@gmail.com
+	Jay Liu
+```
 
 
 ====================================================
