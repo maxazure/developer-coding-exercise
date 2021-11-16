@@ -1,13 +1,17 @@
 # Getting Started
 
 There are two projects in this git:
+
 1. Django server-side API
+
    https://github.com/maxazure/developer-coding-exercise/tree/master/blog
 
 2 React client
+
    https://github.com/maxazure/developer-coding-exercise/tree/master/client
 
 3 Project preview
+
   https://mediasuite.u.jayliu.co.nz/
 
 Please click on the link to view the instructions.
