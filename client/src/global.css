@@ -1,0 +1,46 @@
+body {
+  font: 21px Georgia, Cambria;
+  background-color: #faf8f2;
+}
+#root{
+  width: 860px;
+  height: 100%;
+}
+.bg{
+  width: 860px;
+  height: 100%;
+  position:fixed;
+  background-color:rgba(255,255,255,0.8);
+  z-index: -100;
+  top: 0;
+}
+
+.bd {
+  padding: 28px 48px;
+
+}
+.main{
+  margin: 0px;
+ 
+
+  line-height: 32px;
+  
+}
+.main li{
+  line-height: 210%;
+}
+.main li a{
+  font-size: 22px;
+  font-weight: 500;
+  color: rgba(0,0,0,0.8);
+  font-family: sohne, "Helvetica Neue", Helvetica, Times, serif;
+  
+}
+.main .title{
+  font: 46px "Helvetica Neue", Helvetica;
+  font-weight: 700;
+  line-height: 56px;
+}
+.site-title{
+  padding-bottom: 24px;
+}
