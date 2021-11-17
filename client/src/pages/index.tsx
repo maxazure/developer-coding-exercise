@@ -1,7 +1,6 @@
 import { useRequest } from 'umi';
 import { queryPostList } from '@/services/post';
 import PostList from '@/components/PostList';
-import styles from './style.css';
 
 export default function IndexPage() {
 
@@ -13,8 +12,15 @@ export default function IndexPage() {
 
   const postList = res.data
   return (
-    <div className={styles.bd}>
-      <PostList posts={postList} />
+    <div className='main'>
+      <div className='bg'></div>
+      <div className='bd'>
+        <h1 className='site-title'>Mediasuite Blog Demo</h1>
+        <PostList posts={postList} />
+      </div>
+      
+      
     </div>
+
   );
 }

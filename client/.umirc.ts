@@ -1,6 +1,7 @@
 import { defineConfig } from 'umi';
 
 export default defineConfig({
+  outputPath: '../../www',
   nodeModulesTransform: {
     type: 'none',
   },
@@ -17,5 +18,6 @@ export default defineConfig({
       changeOrigin: true,
       pathRewrite: { '^/api': '' },
     },
-  },
+  }
+
 });
