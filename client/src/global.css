@@ -16,11 +16,16 @@ body {
 }
 
 .loading{
+  background-color: rgba(255,255,255,0.8);
   width: 860px;
   height: 100%;
   position:fixed;
-  z-index: 100;
-  top: 0;
+  display: table;
+  text-align: center;
+}
+.loading .msg{
+  vertical-align: middle;
+  display: table-cell;
 }
 
 .bd {
@@ -41,7 +46,6 @@ body {
   font-size: 22px;
   font-weight: 500;
   color: rgba(0,0,0,0.8);
-  font-family: sohne, "Helvetica Neue", Helvetica, Times, serif;
   
 }
 .main .title{
@@ -51,4 +55,25 @@ body {
 }
 .site-title{
   padding-bottom: 24px;
+}
+
+@media screen and (max-width: 860px) {
+  #root, .loading, .bg {
+    width: 100%;
+  }
+  h1{
+    line-height: 120%;
+  }
+  .site-title{
+    padding-top: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+body{
+  font-size: 18px;
+}
+.bd {
+  padding: 0;
+  margin: 0 24px;
+}
 }

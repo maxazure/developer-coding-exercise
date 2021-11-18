@@ -3,13 +3,14 @@ import { queryPostList } from '@/services/post';
 import PostList from '@/components/PostList';
 import Loading from '@/components/Loading';
 
-export default function IndexPage() {
+const IndexPage = () => {
 
   const { data,error, loading } = useRequest(() => queryPostList()); 
   
   if (error) {
     return <div>failed to load</div>
   }
+  
   if (loading) {
     return <Loading message='Loading homepage ...' />
   }
@@ -25,3 +26,5 @@ export default function IndexPage() {
 
   );
 }
+
+export default IndexPage;

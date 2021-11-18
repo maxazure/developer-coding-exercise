@@ -22,10 +22,9 @@ const Posts = (props: { match: { params: { url: string; }; }; }) => {
         <h1 className='title'>{post.title} </h1>
         <div className='content' dangerouslySetInnerHTML={createMarkup(post.content)}></div>
         <p><b>Author:</b> {post.author}</p>
-        <p><b>TAGS:</b> {post.tags.join(', ')}</p>
+        <p><b>TAGS:</b> {post.tags.map((x:string)=>x.replace(/^\S/, s => s.toUpperCase())).join(', ')}</p>
         <p><Link to="/">BACK</Link></p>
       </div>
-
     </div>
   );
 };
