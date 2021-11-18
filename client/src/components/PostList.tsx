@@ -1,9 +1,10 @@
-const PostList: React.FC<{ posts: unknown[]; }> = ({posts }) => {
+import {Link} from "umi"
+const PostList: React.FC<{ posts: API.PostListItem[]; }> = ({posts }) => {
   return (
       <ul>
         {
-          posts.map(post =>
-            <li><a href={'posts/' + post.url}>{post.title}</a></li>)
+          posts.length > 0 && posts.map(post =>
+            <li key={post.id}><Link to={`posts/${post.slug}`}>{post.title}</Link></li>)
         }
       </ul>
   );

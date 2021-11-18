@@ -16,7 +16,7 @@ def post(request, slug=None):
             except Post.DoesNotExist:
                 return HttpResponse(status=404)
             post_serializer = PostSerializer(post)
-            return JsonResponse({'data':post_serializer.data}, safe=False)
+            return JsonResponse({'data':{'post':post_serializer.data}}, safe=False)
 
         else:
             return HttpResponse(status=404)
@@ -27,4 +27,4 @@ def posts(request):
     if request.method =='GET':
         posts = Post.objects.all()
         posts_serializer = PostListSerializer(posts, many=True)
-        return JsonResponse({'data':posts_serializer.data, }, safe=False)
+        return JsonResponse({'data':{'posts':posts_serializer.data}}, safe=False)

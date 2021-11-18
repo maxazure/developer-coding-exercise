@@ -11,7 +11,7 @@ declare namespace API {
     type PostListItem = {
       id?: number;
       title?: string;
-      url?: string;
+      slug?: string;
       created_on?: string;
     };
   }

@@ -6,25 +6,29 @@ from markdown import markdown
 class PostSerializer(serializers.ModelSerializer):
     """Used to serialize the output of Post for view.
     """
-    html_content = serializers.SerializerMethodField()
+    content = serializers.SerializerMethodField()
+    tags = serializers.SerializerMethodField()
 
-    def get_html_content(self, obj):
+    def get_content(self, obj):
         return markdown(obj.content)
 
+    def get_tags(self, obj):
+        return obj.tags.split(',')
+    
     class Meta:
         model = Post
-        fields = ['id', 'title', 'author','tags', 'html_content', 'created_on']
+        fields = ['id', 'title', 'author','tags', 'content', 'created_on']
 
 
 class PostListSerializer(serializers.ModelSerializer):
     """The json serialised output of the post list, and only Serialise 'id','title','url','created_on'
     """
-    url = serializers.SerializerMethodField()
+    # url = serializers.SerializerMethodField()
 
-    def get_url(self, obj):
-        return '{}'.format(obj.slug)
+    # def get_url(self, obj):
+    #     return '{}'.format(obj.slug)
         # should be slug, but keep this method for future
 
     class Meta:
         model = Post
-        fields = ['id', 'title', 'url', 'created_on']
+        fields = ['id', 'title', 'slug', 'created_on']

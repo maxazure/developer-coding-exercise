@@ -15,6 +15,14 @@ body {
   top: 0;
 }
 
+.loading{
+  width: 860px;
+  height: 100%;
+  position:fixed;
+  z-index: 100;
+  top: 0;
+}
+
 .bd {
   padding: 28px 48px;
 
